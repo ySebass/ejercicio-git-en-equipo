@@ -47,6 +47,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conversor.cs" />
+    <Compile Include="Conversor.Designer.cs">
+      <DependentUpon>Conversor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cuadrante.cs" />
+    <Compile Include="cuadrante.Designer.cs">
+      <DependentUpon>cuadrante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Distancia_entre_dos_puntos.cs" />
+    <Compile Include="Distancia_entre_dos_puntos.Designer.cs">
+      <DependentUpon>Distancia_entre_dos_puntos.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -59,8 +71,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Conversor.resx">
+      <DependentUpon>Conversor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
