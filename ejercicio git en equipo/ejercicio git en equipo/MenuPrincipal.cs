@@ -28,5 +28,26 @@ namespace ejercicio_git_en_equipo
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			Conversor C = new Conversor();
+			C.Show();
+			this.Hide();
+		}
+		
+		void Button2Click(object sender, EventArgs e)
+		{
+			Distancia_entre_dos_puntos D = new Distancia_entre_dos_puntos();
+			D.Show();
+			this.Hide();
+		}
+		
+		void Button3Click(object sender, EventArgs e)
+		{
+			cuadrante U = new cuadrante();
+			U.Show();
+			this.Hide();
+		}
 	}
 }
