@@ -28,5 +28,27 @@ namespace ejercicio_git_en_equipo
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			double x, y;
+			x=Convert.ToDouble(txtX.Text);
+			y=Convert.ToDouble(txtY.Text);
+			if(x > 0 && y > 0)
+				lblResultado.Text="Esta en el 1";
+			else if(x > 0 && y < 0)
+				lblResultado.Text="Esta en el 2";
+			else if(x < 0 && y < 0)
+				lblResultado.Text="Esta en el 3";
+			else if(y > 0 && x < 0)
+				lblResultado.Text="Esta en el 4";
+		}
+		
+		void RegresarToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			MenuPrincipal M=new MenuPrincipal();
+			M.Show();
+			this.Hide();
+		}
 	}
 }

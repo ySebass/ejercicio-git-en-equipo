@@ -74,6 +74,9 @@
     <EmbeddedResource Include="Conversor.resx">
       <DependentUpon>Conversor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cuadrante.resx">
+      <DependentUpon>cuadrante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Distancia_entre_dos_puntos.resx">
       <DependentUpon>Distancia_entre_dos_puntos.cs</DependentUpon>
     </EmbeddedResource>
